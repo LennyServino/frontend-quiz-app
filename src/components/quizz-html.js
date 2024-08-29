@@ -1,3 +1,6 @@
+//importando la funcion de creacion de la estructura html
+import { mostrarQuizHTML } from "./mostrarHTML";
+
 //arreglo que contiene las preguntas del quiz html
 const preguntasHTML = [
     {
@@ -7,7 +10,7 @@ const preguntasHTML = [
     },
     {
         pregunta: "¿Que significa HTML?",
-        respuestas: ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Text Making Language"],
+        respuestas: ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks Text Markup Language", "Hyper Text Making Language"],
         correcta: "HyperText Markup Language"
     },
     {
@@ -52,57 +55,24 @@ const preguntasHTML = [
     }
 ];
 
-export function mostrarQuizHTML() {
-    const mainBody = document.querySelector('#mainContent');
-    //crear el row que contendra el html del main
-    const row = document.createElement('section');
-    row.classList.add('row', 'pt-5', 'mt-5');
+//Función para unir la estructura html con los datos de las preguntas
+export function crearQuizHTML() {
+    mostrarQuizHTML(cargarPregunta, 0);
+    let boton = document.querySelector('#boton-siguiente');
+    let i = 0;
+    boton.addEventListener('click', () => {
+        i++;
+        mostrarQuizHTML(cargarPregunta, i)
 
-    //columna de la izquierda
-    const colIzquierda = document.createElement('section');
-    colIzquierda.classList.add('col-md-6');
-
-    const sectionTitle = document.createElement('div');
-    sectionTitle.classList.add('section-title', 'mx-auto');
-
-    //numero de la pregunta
-    const numeroPregunta = document.createElement('p');
-    numeroPregunta.id = "numero-pregunta";
-
-    //titulo de la pregunta
-    const tituloPregunta = document.createElement('h2');
-    tituloPregunta.id = "titulo-pregunta";
-
-    sectionTitle.appendChild(numeroPregunta);
-    sectionTitle.appendChild(tituloPregunta);
-    colIzquierda.appendChild(sectionTitle);
-
-    //columna derecha para las preguntas
-    const colDerecha = document.createElement('section');
-    colDerecha.classList.add('col-md-6', 'd-flex', 'flex-column', 'align-items-center');
-    colDerecha.id = "pregunta-container";
-
-    //boton de siguiente pregunta
-    const botonSiguiente = document.createElement('button');
-    botonSiguiente.id = 'boton-siguiente';
-    botonSiguiente.classList.add('btn', 'btn-primary', 'mt-3');
-    botonSiguiente.textContent = 'Siguiente';
-
-    //construir todo el bloque
-    row.appendChild(colIzquierda);
-    row.appendChild(colDerecha)
-    mainBody.appendChild(row);
-
-    //insertamos la informacion
-    cargarPregunta(0);
-
+    })
 }
 
-function cargarPregunta(index) {
+
+export function cargarPregunta(index) {
     //obtenemos los elementos donde insertaremos la informacion
     const numeroPregunta = document.querySelector('#numero-pregunta');
     const tituloPregunta = document.querySelector('#titulo-pregunta');
-    const preguntaContainer = document.querySelector('#pregunta-container');
+    const respuestasContainer = document.querySelector('#respuestas-container');
 
     //obtenemos la pregunta segun el index
     let pregunta = preguntasHTML[index];
@@ -112,12 +82,12 @@ function cargarPregunta(index) {
     tituloPregunta.textContent = pregunta.pregunta;
 
     //limpiar las opciones anteriores
-    preguntaContainer.innerHTML = '';
+    respuestasContainer.innerHTML = '';
 
     pregunta.respuestas.map(respuesta => {
         //Mostrar las respuestas
         const article = document.createElement('article');
-        article.classList.add('quiz-card', 'rounded-4', 'p-3', 'mb-3');
+        article.classList.add('quiz-item', 'rounded-4', 'p-3', 'mb-3');
 
         //seccion de la imagen de la opcion
         const img = document.createElement('img');
@@ -133,7 +103,7 @@ function cargarPregunta(index) {
         article.appendChild(img);
         article.appendChild(textoRespuesta);
 
-        preguntaContainer.appendChild(article);
+        respuestasContainer.appendChild(article);
     })
 
 }

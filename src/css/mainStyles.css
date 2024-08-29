@@ -29,6 +29,18 @@ body {
     }
 }
 
+.quiz-item {
+    background-color: #546779;
+    width: 85%;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: #7d8387;
+        width: 90%;
+    }
+}
+
 .quiz-icon {
     background-color: #fff;
     width: 40px;
