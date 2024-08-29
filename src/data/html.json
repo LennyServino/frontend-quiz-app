@@ -1,0 +1,134 @@
+[
+  {
+    "question": "¿Qué significa HTML?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Lenguaje de Marcado de Hipertexto",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Lenguaje de Marcado de Herramientas para el Hogar",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Lenguaje de Marcado de Hipervínculos y Texto",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Lenguaje de Marcado de Herramientas Hiper",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cuál es el elemento HTML que se usa para definir el encabezado más grande?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;h1&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;h6&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;head&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;heading&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué atributo se usa para especificar el destino de un enlace en una etiqueta &lt;a&gt;?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "href", "isCorrect": true },
+      { "id": 2, "answer": "src", "isCorrect": false },
+      { "id": 3, "answer": "link", "isCorrect": false },
+      { "id": 4, "answer": "url", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cuál es el elemento HTML correcto para insertar un salto de línea?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;br&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;lb&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;break&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;line&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cuál es el elemento HTML que se usa para crear una lista no ordenada?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;ul&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;ol&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;li&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;list&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué etiqueta se usa para crear un hipervínculo en HTML?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;a&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;link&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;href&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;url&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué atributo se usa para especificar la fuente de una imagen?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "src", "isCorrect": true },
+      { "id": 2, "answer": "href", "isCorrect": false },
+      { "id": 3, "answer": "img", "isCorrect": false },
+      { "id": 4, "answer": "source", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué elemento se usa para definir una fila de tabla en HTML?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;tr&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;td&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;th&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;row&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué elemento HTML se usa para definir texto enfatizado?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "&lt;em&gt;", "isCorrect": true },
+      { "id": 2, "answer": "&lt;i&gt;", "isCorrect": false },
+      { "id": 3, "answer": "&lt;strong&gt;", "isCorrect": false },
+      { "id": 4, "answer": "&lt;b&gt;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué hace el elemento &lt;title&gt; en HTML?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Especifica el título del documento en la pestaña del navegador",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Especifica el título del contenido",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Agrega un encabezado al documento",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Define el título de una imagen",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  }
+]

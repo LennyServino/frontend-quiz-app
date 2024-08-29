@@ -4,5 +4,5 @@ import '/src/css/mainStyles.css';
 import { insertar_opciones } from './src/components/quiz-options';
 
 document.addEventListener('DOMContentLoaded', () => {
-    //insertar_opciones();
+  insertar_opciones();
 });

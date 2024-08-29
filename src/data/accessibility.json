@@ -1,0 +1,210 @@
+[
+  {
+    "question": "¿Cuál es el propósito del atributo `alt` en una etiqueta `<img>`?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Proporciona texto alternativo para lectores de pantalla",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Establece el ancho de la imagen",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Establece la altura de la imagen",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Agrega un borde alrededor de la imagen",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué función cumple el atributo `aria-label`?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Proporciona una etiqueta para lectores de pantalla",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Cambia el tamaño de la fuente",
+        "isCorrect": false
+      },
+      { "id": 3, "answer": "Define el color del elemento", "isCorrect": false },
+      {
+        "id": 4,
+        "answer": "Establece el margen del elemento",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué elemento HTML se utiliza comúnmente para mejorar la navegación con teclado?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "El elemento `&lt;button&gt;`", "isCorrect": true },
+      { "id": 2, "answer": "El elemento `&lt;div&gt;`", "isCorrect": false },
+      { "id": 3, "answer": "El elemento `&lt;span&gt;`", "isCorrect": false },
+      { "id": 4, "answer": "El elemento `&lt;img&gt;`", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cuál es el propósito de utilizar elementos HTML semánticos?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Mejorar la accesibilidad y el SEO",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Reducir el tamaño del archivo",
+        "isCorrect": false
+      },
+      { "id": 3, "answer": "Agregar color al texto", "isCorrect": false },
+      { "id": 4, "answer": "Crear animaciones", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué hace el atributo `role` en ARIA?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Define el tipo de elemento de la interfaz de usuario",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Establece el color de fondo del elemento",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Cambia el estilo de fuente del elemento",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Establece el ancho del borde del elemento",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo puedes asegurarte de que un sitio web sea accesible para usuarios con baja visión?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Usar colores de alto contraste y fuentes escalables",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Usar texto pequeño y colores brillantes",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Evitar usar texto alternativo en imágenes",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Ocultar texto detrás de imágenes",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Por qué es importante proporcionar soporte para la navegación por teclado?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Para ayudar a los usuarios que no pueden usar un ratón",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Para hacer que el sitio cargue más rápido",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Para agregar efectos visuales",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Para reducir el tamaño del archivo de la página",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué es un lector de pantalla?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "Una herramienta que lee el texto en pantalla",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Un programa que cambia los colores de la pantalla",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answer": "Una herramienta que acelera el internet",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answer": "Un dispositivo para hacer capturas de pantalla",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué controla el atributo `tabindex`?",
+    "possibleAnswers": [
+      {
+        "id": 1,
+        "answer": "El orden en que los elementos reciben foco",
+        "isCorrect": true
+      },
+      { "id": 2, "answer": "El tamaño del elemento", "isCorrect": false },
+      { "id": 3, "answer": "El color del elemento", "isCorrect": false },
+      {
+        "id": 4,
+        "answer": "La posición del elemento en la página",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué atributo se usa para asegurar que los elementos interactivos sean accesibles para los lectores de pantalla?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "aria-label", "isCorrect": true },
+      { "id": 2, "answer": "aria-hidden", "isCorrect": false },
+      { "id": 3, "answer": "aria-role", "isCorrect": false },
+      { "id": 4, "answer": "aria-live", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  }
+]

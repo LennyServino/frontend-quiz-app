@@ -1,0 +1,106 @@
+[
+  {
+    "question": "¿Qué significa CSS?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "Hojas de Estilo en Cascada", "isCorrect": true },
+      { "id": 2, "answer": "Hojas de Estilo Creativas", "isCorrect": false },
+      {
+        "id": 3,
+        "answer": "Hojas de Estilo Computacionales",
+        "isCorrect": false
+      },
+      { "id": 4, "answer": "Hojas de Estilo Coloridas", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué propiedad se utiliza para cambiar el color de fondo?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "background-color", "isCorrect": true },
+      { "id": 2, "answer": "color", "isCorrect": false },
+      { "id": 3, "answer": "bgcolor", "isCorrect": false },
+      { "id": 4, "answer": "background-style", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo agregas una sombra a un elemento en CSS?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "box-shadow", "isCorrect": true },
+      { "id": 2, "answer": "shadow", "isCorrect": false },
+      { "id": 3, "answer": "element-shadow", "isCorrect": false },
+      { "id": 4, "answer": "filter-shadow", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué propiedad de CSS controla el tamaño del texto?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "font-size", "isCorrect": true },
+      { "id": 2, "answer": "text-style", "isCorrect": false },
+      { "id": 3, "answer": "text-size", "isCorrect": false },
+      { "id": 4, "answer": "font-weight", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo haces que cada palabra en un texto comience con una letra mayúscula?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "text-transform: capitalize;", "isCorrect": true },
+      { "id": 2, "answer": "text-transform: uppercase;", "isCorrect": false },
+      { "id": 3, "answer": "transform: capitalize;", "isCorrect": false },
+      { "id": 4, "answer": "font-style: capitalize;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo creas un contenedor flex en CSS?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "display: flex;", "isCorrect": true },
+      { "id": 2, "answer": "flex: container;", "isCorrect": false },
+      { "id": 3, "answer": "display: block;", "isCorrect": false },
+      { "id": 4, "answer": "container: flex;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué propiedad se utiliza para cambiar la fuente de un elemento?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "font-family", "isCorrect": true },
+      { "id": 2, "answer": "font-style", "isCorrect": false },
+      { "id": 3, "answer": "font-weight", "isCorrect": false },
+      { "id": 4, "answer": "font-size", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo haces una lista que enumere sus elementos con cuadrados?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "list-style-type: square;", "isCorrect": true },
+      { "id": 2, "answer": "list-type: square;", "isCorrect": false },
+      { "id": 3, "answer": "list: square;", "isCorrect": false },
+      { "id": 4, "answer": "list-style: square;", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué propiedad de CSS se utiliza para cambiar el color del texto?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "color", "isCorrect": true },
+      { "id": 2, "answer": "text-color", "isCorrect": false },
+      { "id": 3, "answer": "font-color", "isCorrect": false },
+      { "id": 4, "answer": "background-color", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo seleccionas un elemento con id 'header' en CSS?",
+    "possibleAnswers": [
+      { "id": 1, "answer": "#header", "isCorrect": true },
+      { "id": 2, "answer": ".header", "isCorrect": false },
+      { "id": 3, "answer": "header", "isCorrect": false },
+      { "id": 4, "answer": "*header", "isCorrect": false }
+    ],
+    "correctAnswer": 1
+  }
+]
