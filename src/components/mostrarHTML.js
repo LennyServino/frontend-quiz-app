@@ -1,4 +1,4 @@
-export function mostrarQuizHTML(cargarPregunta, index) {
+export function mostrarQuizHTML() {
     const mainBody = document.querySelector('#mainContent');
     //crear el row que contendra el html del main
     const row = document.createElement('section');
@@ -45,8 +45,4 @@ export function mostrarQuizHTML(cargarPregunta, index) {
     row.appendChild(colDerecha)
     colDerecha.appendChild(botonSiguiente);
     mainBody.appendChild(row);
-
-    //insertamos la informacion
-    cargarPregunta(index);
-
 }

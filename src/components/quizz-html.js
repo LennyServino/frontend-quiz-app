@@ -57,12 +57,13 @@ const preguntasHTML = [
 
 //Función para unir la estructura html con los datos de las preguntas
 export function crearQuizHTML() {
-    mostrarQuizHTML(cargarPregunta, 0);
+    mostrarQuizHTML();
     let boton = document.querySelector('#boton-siguiente');
     let i = 0;
+    cargarPregunta(i)
     boton.addEventListener('click', () => {
         i++;
-        mostrarQuizHTML(cargarPregunta, i)
+        cargarPregunta(i)
 
     })
 }
