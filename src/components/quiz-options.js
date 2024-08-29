@@ -10,15 +10,15 @@ export function insertar_opciones() {
                 </div>
             </section>
             <section class="col-md-6 d-flex flex-column align-items-center">
-                <article class="quiz-card rounded-4 p-3 mb-3">
+                <article class="quiz-card rounded-4 p-3 mb-3" id="opcion_html">
                     <img src="/src/images/codigo.png" alt="HTML icon" class="quiz-icon rounded-2 p-1 me-3">
                     <span class="fw-bold fs-4">HTML</span>
                 </article>
-                <article class="quiz-card rounded-4 p-3 my-3">
+                <article class="quiz-card rounded-4 p-3 my-3" id="opcion_css">
                     <img src="/src/images/brocha.png" alt="CSS icon" class="quiz-icon rounded-2 p-1 me-3">
                     <span class="fw-bold fs-4">CSS</span>
                 </article>
-                <article class="quiz-card rounded-4 p-3 my-3">
+                <article class="quiz-card rounded-4 p-3 my-3" id="opcion_js">
                     <img src="/src/images/JS.png" alt="JavaScript icon" class="quiz-icon rounded-2 p-1 me-3">
                     <span class="fw-bold fs-4">JavaScript</span>
                 </article>
