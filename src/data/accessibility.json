@@ -1,0 +1,97 @@
+[
+  {
+    "pregunta": "¿Qué es la accesibilidad en el desarrollo web?",
+    "respuestas": [
+      "Es la práctica de hacer sitios web utilizables por personas con discapacidades",
+      "Es la optimización del rendimiento de un sitio web",
+      "Es el diseño de sitios web para dispositivos móviles",
+      "Es la personalización de la experiencia del usuario"
+    ],
+    "correcta": "Es la práctica de hacer sitios web utilizables por personas con discapacidades"
+  },
+  {
+    "pregunta": "¿Cuál es el propósito de usar texto alternativo (alt) en imágenes?",
+    "respuestas": [
+      "Describir la imagen para usuarios que no pueden verla",
+      "Mejorar el rendimiento del sitio web",
+      "Hacer que la imagen cargue más rápido",
+      "Aumentar el SEO del sitio"
+    ],
+    "correcta": "Describir la imagen para usuarios que no pueden verla"
+  },
+  {
+    "pregunta": "¿Qué elemento HTML se utiliza para definir una estructura semántica de navegación?",
+    "respuestas": ["<nav>", "<header>", "<footer>", "<aside>"],
+    "correcta": "<nav>"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una buena práctica de accesibilidad para formularios?",
+    "respuestas": [
+      "Incluir etiquetas (labels) claras y descriptivas para cada campo",
+      "Utilizar solo iconos sin texto",
+      "No proporcionar retroalimentación de error",
+      "Hacer que todos los campos sean obligatorios"
+    ],
+    "correcta": "Incluir etiquetas (labels) claras y descriptivas para cada campo"
+  },
+  {
+    "pregunta": "¿Qué es ARIA (Accessible Rich Internet Applications)?",
+    "respuestas": [
+      "Un conjunto de atributos que definen formas de hacer contenido web accesible",
+      "Una nueva versión de HTML",
+      "Un lenguaje de programación",
+      "Un protocolo para optimizar la velocidad de sitios web"
+    ],
+    "correcta": "Un conjunto de atributos que definen formas de hacer contenido web accesible"
+  },
+  {
+    "pregunta": "¿Por qué es importante el contraste de color en la accesibilidad?",
+    "respuestas": [
+      "Para asegurarse de que el texto sea legible para personas con discapacidades visuales",
+      "Para hacer que el sitio web sea más atractivo",
+      "Para reducir el uso de energía en los dispositivos",
+      "Para mejorar la velocidad de carga del sitio web"
+    ],
+    "correcta": "Para asegurarse de que el texto sea legible para personas con discapacidades visuales"
+  },
+  {
+    "pregunta": "¿Cuál es la mejor manera de hacer accesibles los enlaces?",
+    "respuestas": [
+      "Proporcionar descripciones claras en el texto del enlace",
+      "Hacer que los enlaces sean invisibles",
+      "Utilizar solo iconos como enlaces",
+      "Hacer que los enlaces se abran en la misma pestaña"
+    ],
+    "correcta": "Proporcionar descripciones claras en el texto del enlace"
+  },
+  {
+    "pregunta": "¿Cómo se puede mejorar la accesibilidad del contenido multimedia?",
+    "respuestas": [
+      "Proporcionando subtítulos y transcripciones",
+      "Reduciendo la calidad de video",
+      "Utilizando solo imágenes sin texto",
+      "Aumentando el volumen predeterminado"
+    ],
+    "correcta": "Proporcionando subtítulos y transcripciones"
+  },
+  {
+    "pregunta": "¿Qué es un lector de pantalla?",
+    "respuestas": [
+      "Un software que lee en voz alta el contenido de la pantalla para usuarios con discapacidades visuales",
+      "Una herramienta para ajustar el brillo de la pantalla",
+      "Un plugin de navegador para mejorar el SEO",
+      "Una técnica para reducir el uso de datos móviles"
+    ],
+    "correcta": "Un software que lee en voz alta el contenido de la pantalla para usuarios con discapacidades visuales"
+  },
+  {
+    "pregunta": "¿Qué significa el acrónimo WCAG?",
+    "respuestas": [
+      "Web Content Accessibility Guidelines",
+      "World Content Accessibility Group",
+      "Web Coding and Accessibility Guidelines",
+      "World Coding and Accessibility Group"
+    ],
+    "correcta": "Web Content Accessibility Guidelines"
+  }
+]

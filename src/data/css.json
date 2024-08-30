@@ -1,0 +1,77 @@
+[
+  {
+    "pregunta": "¿Qué propiedad de CSS se utiliza para cambiar el color del texto?",
+    "respuestas": ["color", "background-color", "font-color", "text-color"],
+    "correcta": "color"
+  },
+  {
+    "pregunta": "¿Cómo se aplica un margen de 20 píxeles en todos los lados de un elemento?",
+    "respuestas": [
+      "margin: 20px;",
+      "padding: 20px;",
+      "border: 20px;",
+      "margin-all: 20px;"
+    ],
+    "correcta": "margin: 20px;"
+  },
+  {
+    "pregunta": "¿Qué propiedad se utiliza para cambiar el tipo de fuente en CSS?",
+    "respuestas": ["font-style", "font-family", "text-style", "font-type"],
+    "correcta": "font-family"
+  },
+  {
+    "pregunta": "¿Cuál es el valor predeterminado de la propiedad 'position' en CSS?",
+    "respuestas": ["static", "relative", "absolute", "fixed"],
+    "correcta": "static"
+  },
+  {
+    "pregunta": "¿Cómo se centra un elemento horizontalmente en CSS utilizando 'margin'?",
+    "respuestas": [
+      "margin: 0 auto;",
+      "margin: auto 0;",
+      "margin: center;",
+      "margin: auto;"
+    ],
+    "correcta": "margin: 0 auto;"
+  },
+  {
+    "pregunta": "¿Qué propiedad se usa para hacer que el texto sea negrita en CSS?",
+    "respuestas": [
+      "font-weight",
+      "font-style",
+      "text-decoration",
+      "text-transform"
+    ],
+    "correcta": "font-weight"
+  },
+  {
+    "pregunta": "¿Cuál es la propiedad de CSS utilizada para controlar el espaciado entre líneas de texto?",
+    "respuestas": [
+      "line-height",
+      "letter-spacing",
+      "text-indent",
+      "word-spacing"
+    ],
+    "correcta": "line-height"
+  },
+  {
+    "pregunta": "¿Qué propiedad de CSS controla el espaciado dentro de un elemento, es decir, entre su contenido y su borde?",
+    "respuestas": ["padding", "margin", "border", "spacing"],
+    "correcta": "padding"
+  },
+  {
+    "pregunta": "¿Qué propiedad CSS se utiliza para establecer una imagen de fondo en un elemento?",
+    "respuestas": [
+      "background-image",
+      "background-color",
+      "background-position",
+      "background-repeat"
+    ],
+    "correcta": "background-image"
+  },
+  {
+    "pregunta": "¿Qué propiedad de CSS se utiliza para cambiar la opacidad de un elemento?",
+    "respuestas": ["opacity", "visibility", "display", "transparency"],
+    "correcta": "opacity"
+  }
+]

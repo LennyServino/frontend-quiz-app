@@ -1,0 +1,77 @@
+[
+  {
+    "pregunta": "¿Qué palabra clave se utiliza para declarar una variable en JavaScript?",
+    "respuestas": ["var", "let", "const", "Todas las anteriores"],
+    "correcta": "Todas las anteriores"
+  },
+  {
+    "pregunta": "¿Cómo se llama una función en JavaScript?",
+    "respuestas": [
+      "function myFunction()",
+      "call myFunction()",
+      "call function myFunction()",
+      "execute myFunction()"
+    ],
+    "correcta": "function myFunction()"
+  },
+  {
+    "pregunta": "¿Cómo se escribe un comentario en una sola línea en JavaScript?",
+    "respuestas": [
+      "// Esto es un comentario",
+      "/* Esto es un comentario */",
+      "<!-- Esto es un comentario -->",
+      "# Esto es un comentario"
+    ],
+    "correcta": "// Esto es un comentario"
+  },
+  {
+    "pregunta": "¿Cuál es el resultado de '2' + 2 en JavaScript?",
+    "respuestas": ["4", "'22'", "NaN", "undefined"],
+    "correcta": "'22'"
+  },
+  {
+    "pregunta": "¿Cuál es la estructura correcta para un condicional if en JavaScript?",
+    "respuestas": [
+      "if (condicion) { }",
+      "if condicion { }",
+      "if condicion() { }",
+      "if {condicion}"
+    ],
+    "correcta": "if (condicion) { }"
+  },
+  {
+    "pregunta": "¿Cómo se accede a un elemento por su ID en JavaScript?",
+    "respuestas": [
+      "document.getElementById()",
+      "document.querySelector()",
+      "document.getElementByClass()",
+      "document.getElement()"
+    ],
+    "correcta": "document.getElementById()"
+  },
+  {
+    "pregunta": "¿Qué método se usa para agregar un elemento al final de un array en JavaScript?",
+    "respuestas": ["push()", "pop()", "shift()", "unshift()"],
+    "correcta": "push()"
+  },
+  {
+    "pregunta": "¿Cómo se convierte un string a un número entero en JavaScript?",
+    "respuestas": ["parseInt()", "Number()", "parseFloat()", "parseNumber()"],
+    "correcta": "parseInt()"
+  },
+  {
+    "pregunta": "¿Qué operador se usa para la concatenación de cadenas en JavaScript?",
+    "respuestas": ["+", "&", ".", "concat()"],
+    "correcta": "+"
+  },
+  {
+    "pregunta": "¿Cómo se define una función anónima en JavaScript?",
+    "respuestas": [
+      "function() {}",
+      "function nombre() {}",
+      "function: {}",
+      "() => {}"
+    ],
+    "correcta": "function() {}"
+  }
+]

@@ -1,24 +1,44 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '/src/css/mainStyles.css';
+import { insertar_opciones } from './src/components/quiz-options';
+import { listenModeChange } from './src/utils/darkMode';
+import { restablecerJuego, seleccionarQuiz } from './src/components/quizz-html';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeBtn = document.querySelector('#flexSwitchCheckChecked');
 
-setupCounter(document.querySelector('#counter'))
+  // Cambiar el tema de la página
+  listenModeChange(darkModeBtn);
+
+  // Iniciar la pantalla de opciones
+  insertar_opciones();
+
+  // Función para agregar listeners cuando se cambie de pantalla
+  function configurarListeners() {
+    let opcionHTML = document.querySelector('#opcion_html');
+    let opcionCSS = document.querySelector('#opcion_css');
+    let opcionJS = document.querySelector('#opcion_js');
+    let opcionAccess = document.querySelector('#opcion_access');
+    let opcionHome = document.querySelector('#home');
+
+    // Evento de escucha para regresar a las opciones del quiz
+    opcionHome.addEventListener('click', () => {
+      insertar_opciones();
+      configurarListeners(); // Reconfigurar los listeners
+      restablecerJuego();
+    });
+
+    // Evento de escucha para mostrar el quiz según la opción seleccionada
+    opcionHTML.addEventListener('click', () => seleccionarQuiz('html'));
+    opcionCSS.addEventListener('click', () => seleccionarQuiz('css'));
+    opcionJS.addEventListener('click', () => seleccionarQuiz('js'));
+    opcionAccess.addEventListener('click', () => seleccionarQuiz('access'));
+  }
+
+  // Configurar los listeners iniciales
+  configurarListeners();
+
+  // Quitar la clase hidden de la etiqueta html cuando se cargue la página
+  document.querySelector('html').classList.remove('hidden');
+});
