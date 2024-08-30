@@ -1,33 +1,49 @@
-//importando sweet alert
+// importando sweet alert
 import Swal from 'sweetalert2';
-
 import { confetti } from '@tsparticles/confetti';
 
-//arreglo que contiene las preguntas del quiz html
-import preguntasHTML from '../data/html.json';
-
-//importando la funcion de creacion de la estructura html
+import { html, css, js, access } from '../data';
 import { mostrarQuizHTML } from './mostrarHTML';
 
-// Inicializar el estado del quiz
-// let preguntaActual = 0;
-let respuestasCorrectas = 0;
-// let yaSeleccionado = false;
+// Función para cargar el quiz según la materia
+export function seleccionarQuiz(materia) {
+  let preguntas;
+  switch (materia) {
+    case 'html':
+      preguntas = html;
+      break;
+    case 'css':
+      preguntas = css;
+      break;
+    case 'js':
+      preguntas = js;
+      break;
+    case 'access':
+      preguntas = access;
+      break;
+    default:
+      throw new Error('Materia no soportada');
+  }
+  crearQuiz(preguntas);
+}
 
-//Función para unir la estructura html con los datos de las preguntas
-export function crearQuizHTML() {
+// Inicializar el estado del quiz
+let respuestasCorrectas = 0;
+
+// Función para unir la estructura HTML con los datos de las preguntas
+function crearQuiz(preguntas) {
   const mainContent = document.querySelector('#mainContent');
   mainContent.innerHTML = '';
   mostrarQuizHTML();
   let boton = document.querySelector('#boton-siguiente');
   let i = 0;
-  cargarPregunta(i);
+  cargarPregunta(i, preguntas);
   boton.addEventListener('click', () => {
+    const respuestas = document.querySelector('#respuestas-container');
     i++;
     boton.classList.add('disabled');
-    const respuestas = document.querySelector('#respuestas-container');
-    if (i < preguntasHTML.length) {
-      cargarPregunta(i);
+    if (i < preguntas.length) {
+      cargarPregunta(i, preguntas);
     } else {
       Swal.fire(
         `Has completado el quiz! \n\nRespuestas correctas: ${respuestasCorrectas}`
@@ -41,37 +57,34 @@ export function crearQuizHTML() {
   });
 }
 
-export function cargarPregunta(index) {
-  //obtenemos los elementos donde insertaremos la informacion
+function cargarPregunta(index, preguntas) {
+  // Obtener los elementos donde insertaremos la información
   const numeroPregunta = document.querySelector('#numero-pregunta');
   const tituloPregunta = document.querySelector('#titulo-pregunta');
   const respuestasContainer = document.querySelector('#respuestas-container');
 
-  //obtenemos la pregunta segun el index
-  let pregunta = preguntasHTML[index];
+  // Obtener la pregunta según el index
+  let pregunta = preguntas[index];
 
-  //actualizar el numero y titulo de la pregunta
-  numeroPregunta.textContent = `Pregunta ${index + 1} de ${
-    preguntasHTML.length
-  }`;
+  // Actualizar el número y título de la pregunta
+  numeroPregunta.textContent = `Pregunta ${index + 1} de ${preguntas.length}`;
   tituloPregunta.textContent = pregunta.pregunta;
 
-  //limpiar las opciones anteriores
+  // Limpiar las opciones anteriores
   respuestasContainer.innerHTML = '';
 
-  let indexRespuesta = 0;
-  pregunta.respuestas.map((respuesta) => {
-    //Mostrar las respuestas
+  pregunta.respuestas.forEach((respuesta, idx) => {
+    // Mostrar las respuestas
     const article = document.createElement('article');
     article.classList.add('quiz-item', 'rounded-4', 'p-3', 'mb-3');
 
-    //seccion de la imagen de la opcion
+    // Sección de la imagen de la opción
     const img = document.createElement('img');
-    img.src = `/src/images/alfabeto${indexRespuesta}.png`;
+    img.src = `/src/images/alfabeto${idx}.png`;
     img.alt = `${respuesta} icon`;
     img.classList.add('quiz-icon', 'rounded-2', 'p-1', 'me-3');
 
-    //texto de la respuesta
+    // Texto de la respuesta
     const textoRespuesta = document.createElement('span');
     textoRespuesta.textContent = respuesta;
     textoRespuesta.classList.add('fw-bold', 'fs-4');
@@ -83,13 +96,12 @@ export function cargarPregunta(index) {
     article.addEventListener('click', () =>
       validarRespuesta(pregunta.correcta, respuesta)
     );
-    indexRespuesta++;
   });
 }
 
 function validarRespuesta(respuestaCorrecta, respuestaSeleccionada) {
   if (respuestaSeleccionada === respuestaCorrecta) {
-    Swal.fire('respuesta correcta!');
+    Swal.fire('¡Respuesta correcta!');
     confetti({
       particleCount: 100,
       spread: 70,
@@ -97,14 +109,14 @@ function validarRespuesta(respuestaCorrecta, respuestaSeleccionada) {
     });
     respuestasCorrectas++;
 
-    //habilitamos el boton para la siguiente pregunta
+    // Habilitamos el botón para la siguiente pregunta
     const botonSiguiente = document.getElementById('boton-siguiente');
     botonSiguiente.classList.remove('disabled');
   } else {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Respuesta incorrecta!',
+      text: '¡Respuesta incorrecta!',
     });
   }
 }

@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '/src/css/mainStyles.css';
 import { insertar_opciones } from './src/components/quiz-options';
-import { crearQuizHTML, restablecerJuego } from './src/components/quizz-html';
 import { listenModeChange } from './src/utils/darkMode';
+import { restablecerJuego, seleccionarQuiz } from './src/components/quizz-html';
 
 document.addEventListener('DOMContentLoaded', () => {
   const darkModeBtn = document.querySelector('#flexSwitchCheckChecked');
@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Función para agregar listeners cuando se cambie de pantalla
   function configurarListeners() {
     let opcionHTML = document.querySelector('#opcion_html');
+    let opcionCSS = document.querySelector('#opcion_css');
+    let opcionJS = document.querySelector('#opcion_js');
+    let opcionAccess = document.querySelector('#opcion_access');
     let opcionHome = document.querySelector('#home');
 
     // Evento de escucha para regresar a las opciones del quiz
@@ -26,8 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
       restablecerJuego();
     });
 
-    // Evento de escucha para mostrar el quiz HTML
-    opcionHTML.addEventListener('click', crearQuizHTML);
+    // Evento de escucha para mostrar el quiz según la opción seleccionada
+    opcionHTML.addEventListener('click', () => seleccionarQuiz('html'));
+    opcionCSS.addEventListener('click', () => seleccionarQuiz('css'));
+    opcionJS.addEventListener('click', () => seleccionarQuiz('js'));
+    opcionAccess.addEventListener('click', () => seleccionarQuiz('access'));
   }
 
   // Configurar los listeners iniciales
