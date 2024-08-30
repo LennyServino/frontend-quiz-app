@@ -1,122 +1,77 @@
 [
   {
-    "question": "¿Cuál es la sintaxis correcta para referirse a un script externo llamado 'app.js'?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "&lt;script src='app.js'&gt;", "isCorrect": true },
-      { "id": 2, "answer": "&lt;script href='app.js'&gt;", "isCorrect": false },
-      { "id": 3, "answer": "&lt;script ref='app.js'&gt;", "isCorrect": false },
-      { "id": 4, "answer": "&lt;script name='app.js'&gt;", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Qué palabra clave se utiliza para declarar una variable en JavaScript?",
+    "respuestas": ["var", "let", "const", "Todas las anteriores"],
+    "correcta": "Todas las anteriores"
   },
   {
-    "question": "¿Cómo se escribe 'Hola Mundo' en una caja de alerta?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "alert('Hola Mundo');", "isCorrect": true },
-      { "id": 2, "answer": "msg('Hola Mundo');", "isCorrect": false },
-      { "id": 3, "answer": "alertBox('Hola Mundo');", "isCorrect": false },
-      { "id": 4, "answer": "msgBox('Hola Mundo');", "isCorrect": false }
+    "pregunta": "¿Cómo se llama una función en JavaScript?",
+    "respuestas": [
+      "function myFunction()",
+      "call myFunction()",
+      "call function myFunction()",
+      "execute myFunction()"
     ],
-    "correctAnswer": 1
+    "correcta": "function myFunction()"
   },
   {
-    "question": "¿Cómo se crea una función en JavaScript?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "function miFuncion()", "isCorrect": true },
-      { "id": 2, "answer": "function:miFuncion()", "isCorrect": false },
-      { "id": 3, "answer": "function = miFuncion()", "isCorrect": false },
-      { "id": 4, "answer": "miFuncion function()", "isCorrect": false }
+    "pregunta": "¿Cómo se escribe un comentario en una sola línea en JavaScript?",
+    "respuestas": [
+      "// Esto es un comentario",
+      "/* Esto es un comentario */",
+      "<!-- Esto es un comentario -->",
+      "# Esto es un comentario"
     ],
-    "correctAnswer": 1
+    "correcta": "// Esto es un comentario"
   },
   {
-    "question": "¿Cómo se llama a una función llamada 'miFuncion'?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "miFuncion()", "isCorrect": true },
-      { "id": 2, "answer": "llamar funcion miFuncion()", "isCorrect": false },
-      { "id": 3, "answer": "llamar miFuncion()", "isCorrect": false },
-      { "id": 4, "answer": "ejecutar miFuncion()", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Cuál es el resultado de '2' + 2 en JavaScript?",
+    "respuestas": ["4", "'22'", "NaN", "undefined"],
+    "correcta": "'22'"
   },
   {
-    "question": "¿Cómo se puede añadir un comentario en JavaScript?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "// Esto es un comentario", "isCorrect": true },
-      {
-        "id": 2,
-        "answer": "&lt;!-- Esto es un comentario --&gt;",
-        "isCorrect": false
-      },
-      { "id": 3, "answer": "'Esto es un comentario'", "isCorrect": false },
-      { "id": 4, "answer": "** Esto es un comentario **", "isCorrect": false }
+    "pregunta": "¿Cuál es la estructura correcta para un condicional if en JavaScript?",
+    "respuestas": [
+      "if (condicion) { }",
+      "if condicion { }",
+      "if condicion() { }",
+      "if {condicion}"
     ],
-    "correctAnswer": 1
+    "correcta": "if (condicion) { }"
   },
   {
-    "question": "¿Cuál es la forma correcta de escribir un array en JavaScript?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "var colores = ['rojo', 'verde', 'azul']",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "var colores = 'rojo', 'verde', 'azul'",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "var colores = (1:'rojo', 2:'verde', 3:'azul')",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "var colores = 1 = ('rojo'), 2 = ('verde'), 3 = ('azul')",
-        "isCorrect": false
-      }
+    "pregunta": "¿Cómo se accede a un elemento por su ID en JavaScript?",
+    "respuestas": [
+      "document.getElementById()",
+      "document.querySelector()",
+      "document.getElementByClass()",
+      "document.getElement()"
     ],
-    "correctAnswer": 1
+    "correcta": "document.getElementById()"
   },
   {
-    "question": "¿Cómo se redondea el número 7.25 al entero más cercano?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "Math.round(7.25)", "isCorrect": true },
-      { "id": 2, "answer": "Math.rnd(7.25)", "isCorrect": false },
-      { "id": 3, "answer": "round(7.25)", "isCorrect": false },
-      { "id": 4, "answer": "Math.roundNum(7.25)", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Qué método se usa para agregar un elemento al final de un array en JavaScript?",
+    "respuestas": ["push()", "pop()", "shift()", "unshift()"],
+    "correcta": "push()"
   },
   {
-    "question": "¿Cómo se encuentra el número más grande entre 2 y 4?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "Math.max(2, 4)", "isCorrect": true },
-      { "id": 2, "answer": "ceil(2, 4)", "isCorrect": false },
-      { "id": 3, "answer": "Math.ceil(2, 4)", "isCorrect": false },
-      { "id": 4, "answer": "top(2, 4)", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Cómo se convierte un string a un número entero en JavaScript?",
+    "respuestas": ["parseInt()", "Number()", "parseFloat()", "parseNumber()"],
+    "correcta": "parseInt()"
   },
   {
-    "question": "¿Qué evento ocurre cuando el usuario hace clic en un elemento HTML?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "onclick", "isCorrect": true },
-      { "id": 2, "answer": "onchange", "isCorrect": false },
-      { "id": 3, "answer": "onmouseclick", "isCorrect": false },
-      { "id": 4, "answer": "onmouseover", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Qué operador se usa para la concatenación de cadenas en JavaScript?",
+    "respuestas": ["+", "&", ".", "concat()"],
+    "correcta": "+"
   },
   {
-    "question": "¿Cómo se declara una variable en JavaScript?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "var x", "isCorrect": true },
-      { "id": 2, "answer": "variable x", "isCorrect": false },
-      { "id": 3, "answer": "v x", "isCorrect": false },
-      { "id": 4, "answer": "x = var", "isCorrect": false }
+    "pregunta": "¿Cómo se define una función anónima en JavaScript?",
+    "respuestas": [
+      "function() {}",
+      "function nombre() {}",
+      "function: {}",
+      "() => {}"
     ],
-    "correctAnswer": 1
+    "correcta": "function() {}"
   }
 ]

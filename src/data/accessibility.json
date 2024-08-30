@@ -1,210 +1,97 @@
 [
   {
-    "question": "¿Cuál es el propósito del atributo `alt` en una etiqueta `<img>`?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Proporciona texto alternativo para lectores de pantalla",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Establece el ancho de la imagen",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "Establece la altura de la imagen",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "Agrega un borde alrededor de la imagen",
-        "isCorrect": false
-      }
+    "pregunta": "¿Qué es la accesibilidad en el desarrollo web?",
+    "respuestas": [
+      "Es la práctica de hacer sitios web utilizables por personas con discapacidades",
+      "Es la optimización del rendimiento de un sitio web",
+      "Es el diseño de sitios web para dispositivos móviles",
+      "Es la personalización de la experiencia del usuario"
     ],
-    "correctAnswer": 1
+    "correcta": "Es la práctica de hacer sitios web utilizables por personas con discapacidades"
   },
   {
-    "question": "¿Qué función cumple el atributo `aria-label`?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Proporciona una etiqueta para lectores de pantalla",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Cambia el tamaño de la fuente",
-        "isCorrect": false
-      },
-      { "id": 3, "answer": "Define el color del elemento", "isCorrect": false },
-      {
-        "id": 4,
-        "answer": "Establece el margen del elemento",
-        "isCorrect": false
-      }
+    "pregunta": "¿Cuál es el propósito de usar texto alternativo (alt) en imágenes?",
+    "respuestas": [
+      "Describir la imagen para usuarios que no pueden verla",
+      "Mejorar el rendimiento del sitio web",
+      "Hacer que la imagen cargue más rápido",
+      "Aumentar el SEO del sitio"
     ],
-    "correctAnswer": 1
+    "correcta": "Describir la imagen para usuarios que no pueden verla"
   },
   {
-    "question": "¿Qué elemento HTML se utiliza comúnmente para mejorar la navegación con teclado?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "El elemento `&lt;button&gt;`", "isCorrect": true },
-      { "id": 2, "answer": "El elemento `&lt;div&gt;`", "isCorrect": false },
-      { "id": 3, "answer": "El elemento `&lt;span&gt;`", "isCorrect": false },
-      { "id": 4, "answer": "El elemento `&lt;img&gt;`", "isCorrect": false }
-    ],
-    "correctAnswer": 1
+    "pregunta": "¿Qué elemento HTML se utiliza para definir una estructura semántica de navegación?",
+    "respuestas": ["<nav>", "<header>", "<footer>", "<aside>"],
+    "correcta": "<nav>"
   },
   {
-    "question": "¿Cuál es el propósito de utilizar elementos HTML semánticos?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Mejorar la accesibilidad y el SEO",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Reducir el tamaño del archivo",
-        "isCorrect": false
-      },
-      { "id": 3, "answer": "Agregar color al texto", "isCorrect": false },
-      { "id": 4, "answer": "Crear animaciones", "isCorrect": false }
+    "pregunta": "¿Cuál de las siguientes es una buena práctica de accesibilidad para formularios?",
+    "respuestas": [
+      "Incluir etiquetas (labels) claras y descriptivas para cada campo",
+      "Utilizar solo iconos sin texto",
+      "No proporcionar retroalimentación de error",
+      "Hacer que todos los campos sean obligatorios"
     ],
-    "correctAnswer": 1
+    "correcta": "Incluir etiquetas (labels) claras y descriptivas para cada campo"
   },
   {
-    "question": "¿Qué hace el atributo `role` en ARIA?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Define el tipo de elemento de la interfaz de usuario",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Establece el color de fondo del elemento",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "Cambia el estilo de fuente del elemento",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "Establece el ancho del borde del elemento",
-        "isCorrect": false
-      }
+    "pregunta": "¿Qué es ARIA (Accessible Rich Internet Applications)?",
+    "respuestas": [
+      "Un conjunto de atributos que definen formas de hacer contenido web accesible",
+      "Una nueva versión de HTML",
+      "Un lenguaje de programación",
+      "Un protocolo para optimizar la velocidad de sitios web"
     ],
-    "correctAnswer": 1
+    "correcta": "Un conjunto de atributos que definen formas de hacer contenido web accesible"
   },
   {
-    "question": "¿Cómo puedes asegurarte de que un sitio web sea accesible para usuarios con baja visión?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Usar colores de alto contraste y fuentes escalables",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Usar texto pequeño y colores brillantes",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "Evitar usar texto alternativo en imágenes",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "Ocultar texto detrás de imágenes",
-        "isCorrect": false
-      }
+    "pregunta": "¿Por qué es importante el contraste de color en la accesibilidad?",
+    "respuestas": [
+      "Para asegurarse de que el texto sea legible para personas con discapacidades visuales",
+      "Para hacer que el sitio web sea más atractivo",
+      "Para reducir el uso de energía en los dispositivos",
+      "Para mejorar la velocidad de carga del sitio web"
     ],
-    "correctAnswer": 1
+    "correcta": "Para asegurarse de que el texto sea legible para personas con discapacidades visuales"
   },
   {
-    "question": "¿Por qué es importante proporcionar soporte para la navegación por teclado?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Para ayudar a los usuarios que no pueden usar un ratón",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Para hacer que el sitio cargue más rápido",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "Para agregar efectos visuales",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "Para reducir el tamaño del archivo de la página",
-        "isCorrect": false
-      }
+    "pregunta": "¿Cuál es la mejor manera de hacer accesibles los enlaces?",
+    "respuestas": [
+      "Proporcionar descripciones claras en el texto del enlace",
+      "Hacer que los enlaces sean invisibles",
+      "Utilizar solo iconos como enlaces",
+      "Hacer que los enlaces se abran en la misma pestaña"
     ],
-    "correctAnswer": 1
+    "correcta": "Proporcionar descripciones claras en el texto del enlace"
   },
   {
-    "question": "¿Qué es un lector de pantalla?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "Una herramienta que lee el texto en pantalla",
-        "isCorrect": true
-      },
-      {
-        "id": 2,
-        "answer": "Un programa que cambia los colores de la pantalla",
-        "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answer": "Una herramienta que acelera el internet",
-        "isCorrect": false
-      },
-      {
-        "id": 4,
-        "answer": "Un dispositivo para hacer capturas de pantalla",
-        "isCorrect": false
-      }
+    "pregunta": "¿Cómo se puede mejorar la accesibilidad del contenido multimedia?",
+    "respuestas": [
+      "Proporcionando subtítulos y transcripciones",
+      "Reduciendo la calidad de video",
+      "Utilizando solo imágenes sin texto",
+      "Aumentando el volumen predeterminado"
     ],
-    "correctAnswer": 1
+    "correcta": "Proporcionando subtítulos y transcripciones"
   },
   {
-    "question": "¿Qué controla el atributo `tabindex`?",
-    "possibleAnswers": [
-      {
-        "id": 1,
-        "answer": "El orden en que los elementos reciben foco",
-        "isCorrect": true
-      },
-      { "id": 2, "answer": "El tamaño del elemento", "isCorrect": false },
-      { "id": 3, "answer": "El color del elemento", "isCorrect": false },
-      {
-        "id": 4,
-        "answer": "La posición del elemento en la página",
-        "isCorrect": false
-      }
+    "pregunta": "¿Qué es un lector de pantalla?",
+    "respuestas": [
+      "Un software que lee en voz alta el contenido de la pantalla para usuarios con discapacidades visuales",
+      "Una herramienta para ajustar el brillo de la pantalla",
+      "Un plugin de navegador para mejorar el SEO",
+      "Una técnica para reducir el uso de datos móviles"
     ],
-    "correctAnswer": 1
+    "correcta": "Un software que lee en voz alta el contenido de la pantalla para usuarios con discapacidades visuales"
   },
   {
-    "question": "¿Qué atributo se usa para asegurar que los elementos interactivos sean accesibles para los lectores de pantalla?",
-    "possibleAnswers": [
-      { "id": 1, "answer": "aria-label", "isCorrect": true },
-      { "id": 2, "answer": "aria-hidden", "isCorrect": false },
-      { "id": 3, "answer": "aria-role", "isCorrect": false },
-      { "id": 4, "answer": "aria-live", "isCorrect": false }
+    "pregunta": "¿Qué significa el acrónimo WCAG?",
+    "respuestas": [
+      "Web Content Accessibility Guidelines",
+      "World Content Accessibility Group",
+      "Web Coding and Accessibility Guidelines",
+      "World Coding and Accessibility Group"
     ],
-    "correctAnswer": 1
+    "correcta": "Web Content Accessibility Guidelines"
   }
 ]
