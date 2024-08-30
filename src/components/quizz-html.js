@@ -1,3 +1,8 @@
+//importando sweet alert
+import Swal from 'sweetalert2';
+
+import { confetti } from '@tsparticles/confetti';
+
 //importando la funcion de creacion de la estructura html
 import { mostrarQuizHTML } from "./mostrarHTML";
 
@@ -57,13 +62,25 @@ const preguntasHTML = [
 
 //Función para unir la estructura html con los datos de las preguntas
 export function crearQuizHTML() {
+    const mainContent = document.querySelector('#mainContent');
+    mainContent.innerHTML = '';
     mostrarQuizHTML();
     let boton = document.querySelector('#boton-siguiente');
     let i = 0;
     cargarPregunta(i)
     boton.addEventListener('click', () => {
         i++;
-        cargarPregunta(i)
+
+        if (i < preguntasHTML.length) {
+            cargarPregunta(i)
+        } else {
+            Swal.fire("Has completado el quiz!");
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 },
+            });
+        }
 
     })
 }

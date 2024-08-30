@@ -1,6 +1,7 @@
 export function insertar_opciones() {
     const mainBody = document.querySelector('#mainContent');
 
+
     mainBody.innerHTML =`
         <section class="row pt-5 mt-5">
             <section class="col-md-6">
