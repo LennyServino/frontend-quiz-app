@@ -70,7 +70,8 @@ export function crearQuizHTML() {
     cargarPregunta(i)
     boton.addEventListener('click', () => {
         i++;
-
+        boton.classList.add('disabled');
+        const respuestas = document.querySelector('#respuestas-container');
         if (i < preguntasHTML.length) {
             cargarPregunta(i)
         } else {
@@ -102,6 +103,7 @@ export function cargarPregunta(index) {
     //limpiar las opciones anteriores
     respuestasContainer.innerHTML = '';
 
+    let indexRespuesta = 0;
     pregunta.respuestas.map(respuesta => {
         //Mostrar las respuestas
         const article = document.createElement('article');
@@ -109,7 +111,7 @@ export function cargarPregunta(index) {
 
         //seccion de la imagen de la opcion
         const img = document.createElement('img');
-        img.src = "/src/images/codigo.png";
+        img.src = `/src/images/alfabeto${indexRespuesta}.png`;
         img.alt = `${respuesta} icon`;
         img.classList.add('quiz-icon', 'rounded-2', 'p-1', 'me-3');
 
@@ -122,15 +124,30 @@ export function cargarPregunta(index) {
         article.appendChild(textoRespuesta);
 
         respuestasContainer.appendChild(article);
+        article.addEventListener('click', () => validarRespuesta(pregunta.correcta, respuesta));
+        indexRespuesta++;
     })
 
 }
 
-export function prueba() {
-    preguntasHTML.map(preguntasObj => {
-        console.log(preguntasObj.pregunta);
-        preguntasObj.respuestas.map(respuesta => {
-            console.log(respuesta);
-        })
-    })
+function validarRespuesta(respuestaCorrecta, respuestaSeleccionada) {
+
+    if(respuestaSeleccionada === respuestaCorrecta) {
+        Swal.fire("respuesta correcta!");
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+
+        //habilitamos el boton para la siguiente pregunta
+        const botonSiguiente = document.getElementById('boton-siguiente');
+        botonSiguiente.classList.remove('disabled');
+    } else {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Respuesta incorrecta!",
+        });
+    }
 }
