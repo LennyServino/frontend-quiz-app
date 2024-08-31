@@ -29,7 +29,6 @@ body {
   &:hover {
     background-color: #7d8387;
     width: 78%;
-    /* padding: 1.2rem !important; */
   }
 }
 
@@ -59,7 +58,8 @@ body {
 }
 
 .light-mode .quiz-card {
-  background-color: #dfe6e9;
+  background-color: #546779;
+  color: white;
 }
 
 .light-mode .quiz-card:hover {
@@ -72,4 +72,19 @@ body {
 
 .light-mode .quiz-item span {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .quiz-card {
+    width: 100%;
+  }
+
+  .quiz-item {
+    width: 100%;
+  }
 }

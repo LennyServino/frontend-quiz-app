@@ -6,7 +6,7 @@ export function mostrarQuizHTML() {
 
   // Crear el contenedor principal (row)
   const row = document.createElement('section');
-  row.classList.add('row', 'pt-5', 'mt-5');
+  row.classList.add('row', 'pt-1', 'mt-1', 'pt-md-5', 'mt-md-5', 'gap-4', 'gap-md-0');
 
   // Columna de la izquierda
   const colIzquierda = document.createElement('section');

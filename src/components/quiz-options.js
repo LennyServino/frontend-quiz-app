@@ -2,7 +2,7 @@ export function insertar_opciones() {
   const mainBody = document.querySelector('#mainContent');
 
   mainBody.innerHTML = `
-        <section class="row pt-5 mt-5">
+        <section class="row pt-1 mt-1 pt-md-5 mt-md-5 gap-4 gap-md-0">
             <section class="col-md-6">
                 <div class="section-title mx-auto">
                     <h1>Welcome to the <span class="fw-bolder">Frontend Quiz!</span></h1>
