@@ -51,7 +51,7 @@ export function mostrarQuizHTML() {
   // Botón de siguiente pregunta
   const botonSiguiente = document.createElement('button');
   botonSiguiente.id = 'boton-siguiente';
-  botonSiguiente.classList.add('btn', 'btn-primary', 'mt-3', 'disabled');
+  botonSiguiente.classList.add('btn', 'btn-primary', 'mt-3', 'd-none');
   botonSiguiente.textContent = 'Siguiente';
 
   // Construir todo el bloque

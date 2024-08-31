@@ -32,6 +32,7 @@ let respuestasCorrectas = 0;
 
 // Función para unir la estructura HTML con los datos de las preguntas
 function crearQuiz(preguntas) {
+  const botonHome = document.getElementById('home');
   const mainContent = document.querySelector('#mainContent');
   mainContent.innerHTML = '';
   mostrarQuizHTML();
@@ -41,13 +42,23 @@ function crearQuiz(preguntas) {
   boton.addEventListener('click', () => {
     const respuestas = document.querySelector('#respuestas-container');
     i++;
-    boton.classList.add('disabled');
     if (i < preguntas.length) {
       cargarPregunta(i, preguntas);
     } else {
-      Swal.fire(
-        `Has completado el quiz! \n\nRespuestas correctas: ${respuestasCorrectas}`
-      );
+      Swal.fire({
+        text: '¡Has completado el quiz!!',
+        allowOutsideClick: true,
+        title: `Respuestas correctas: ${respuestasCorrectas}`,
+        icon: 'info',
+        confirmButtonText: "Jugar de Nuevo",
+        allowOutsideClick: false,
+        allowEscapeKey: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Click el botón para volver al inicio
+          botonHome.click();
+        }
+      });
       confetti({
         particleCount: 100,
         spread: 70,
@@ -100,23 +111,47 @@ function cargarPregunta(index, preguntas) {
 }
 
 function validarRespuesta(respuestaCorrecta, respuestaSeleccionada) {
+  const botonSiguiente = document.getElementById('boton-siguiente');
   if (respuestaSeleccionada === respuestaCorrecta) {
-    Swal.fire('¡Respuesta correcta!');
+    Swal.fire({
+      text: '¡Buen trabajo!',
+      title: '¡Respuesta correcta!',
+      icon: 'success',
+      confirmButtonText: "Siguiente pregunta",
+      allowOutsideClick: false,
+      allowEscapeKey: false
+
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // click en el botón para la siguiente pregunta
+        botonSiguiente.click();
+      }
+    });
+
     confetti({
+      icon: 'success',
       particleCount: 100,
       spread: 70,
       origin: { y: 0.6 },
     });
     respuestasCorrectas++;
 
-    // Habilitamos el botón para la siguiente pregunta
-    const botonSiguiente = document.getElementById('boton-siguiente');
-    botonSiguiente.classList.remove('disabled');
+
   } else {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
       text: '¡Respuesta incorrecta!',
+      confirmButtonText: "Siguiente pregunta",
+      allowOutsideClick: false,
+      allowEscapeKey: false
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Click el botón para la siguiente pregunta
+        botonSiguiente.click();
+
+
+      }
     });
   }
 }
