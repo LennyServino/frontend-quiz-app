@@ -42,7 +42,6 @@ function crearQuiz(preguntas) {
   boton.addEventListener('click', () => {
     const respuestas = document.querySelector('#respuestas-container');
     i++;
-    boton.classList.add('disabled');
     if (i < preguntas.length) {
       cargarPregunta(i, preguntas);
     } else {
